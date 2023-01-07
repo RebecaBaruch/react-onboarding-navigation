@@ -1,7 +1,4 @@
 import { useState } from 'react'
-
-import Content from './components/Box';
-
 import './App.css';
 import Screen from './Screen';
 
