@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     height: 100%;
+    background-color: yellow
 `;
 
 export const ButtonContainer = styled.div`
@@ -21,7 +22,6 @@ export const Box = styled.div`
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    height: auto;
 `;
 
 export const Figure = styled.div`
