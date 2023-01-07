@@ -3,14 +3,13 @@ import { useState } from 'react'
 import Content from './components/Box';
 
 import './App.css';
-import Box from './components/Box';
+import Screen from './Screen';
 
 function App() {
 
   return (
     <div className="App">
-      <Box />
-      
+      <Screen />
     </div>
   )
 }

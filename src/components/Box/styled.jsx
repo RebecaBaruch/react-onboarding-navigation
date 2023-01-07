@@ -4,17 +4,16 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
-    height: 50%;
-
-    background-color: yellow;
+    height: auto;
 `;
 
 export const Figure = styled.div`
-    width: 100%;
-    height: 40%;
+    height: 65%;
 
     & > :first-child{
-        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
     }
 `;

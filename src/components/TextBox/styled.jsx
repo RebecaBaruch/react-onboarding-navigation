@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const TextWrapper = styled.div`
-    display: space-between;
-    flex-direction: column;
-    gap: 20px;
-    height: auto
     text-align: center;
 `;
 
