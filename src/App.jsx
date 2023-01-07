@@ -1,14 +1,16 @@
 import { useState } from 'react'
 
-import Content from './components/Content/Content';
+import Content from './components/Box';
 
-import './App.css'
+import './App.css';
+import Box from './components/Box';
 
 function App() {
 
   return (
     <div className="App">
-      <Content></Content>
+      <Box />
+      
     </div>
   )
 }
