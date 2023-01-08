@@ -9,7 +9,7 @@ const Button = styled.button`
     ${(props) => 
             props.type == 'next' ?
             'background-color: #92E3A9; color: #ffffff;' :
-            'background-color: transparent; color: #92E3A9;' 
+            'background-color: transparent; color: #92E3A9;'
     }
 `;
 

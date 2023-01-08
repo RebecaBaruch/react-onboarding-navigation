@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {Wrapper, ButtonContainer, Box, Figure} from './styled';
 import TextBox from '../components/TextBox';
 import Stepper from '../components/Stepper';
@@ -8,20 +9,36 @@ import img02 from '../assets/img02.svg';
 import img03 from '../assets/img03.svg';
 
 function Screen(){
+    const [page, setPage] = useState(0);
+
+    const pageChangeHandler = () => {
+        page === 2 ? setPage(0) : setPage(page + 1);
+    }
+
+    const skipChangeHandler = () => {
+        setPage(2);
+    }
+
     let screenContent = [
         {
             key: 1,
-            src: img01
+            src: img01,
+            title: 'Plant lover Community',
+            text: 'Find gardening enthusiasts from all over the world'
         },
 
         {
             key: 2,
-            src: img02
+            src: img02,
+            title: 'Get fast & safe delivery',
+            text: 'Get good quality products for your plants'
         },
 
         {
             key: 3,
-            src: img03
+            src: img03,
+            title: 'Buy & Sell Tools',
+            text: 'Buy & sell good quality products for your beautiful plants'
         }
     ];
 
@@ -29,18 +46,19 @@ function Screen(){
         <Wrapper>
             <Box>
                 <Figure>
-                    <img src={screenContent[0].src} />
+                    <img src={screenContent[page].src} />
                 </Figure>
                 <TextBox
-                    title={'Plant lover Community'}
-                    text={'Find gardening enthusiasts from all over the world'}
+                    title={screenContent[page].title}
+                    text={screenContent[page].text}
                 />
                 <Stepper />
             </Box>
             
             <ButtonContainer>
-                <NavButton type={'next'} label={'Continue'}/>
-                <NavButton type={'skip'} label={'Skip'}/>
+                <NavButton type={'next'} label={'Continue'} onClick={pageChangeHandler} />
+
+                {page < 2 && <NavButton type={'skip'} label={'Skip'} onClick={skipChangeHandler}/> }
             </ButtonContainer>
         </Wrapper>
     );

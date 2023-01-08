@@ -5,10 +5,10 @@ export const TextWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 1.5rem
+    font-size: 1.6rem
 `;
 
 export const Text = styled.p`
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 300;
 `;

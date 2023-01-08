@@ -2,16 +2,18 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
+    gap: 50px;
     align-items: center;
+    padding: 8%;
     height: 100%;
-    background-color: yellow
+    width: 100%;
 `;
 
 export const ButtonContainer = styled.div`
     display: flex;
-    gap: 15px;
+    gap: 40px;
     flex-direction: column;
     width: 95%;
 `;
