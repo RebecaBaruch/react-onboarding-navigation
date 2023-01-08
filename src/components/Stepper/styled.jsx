@@ -5,6 +5,14 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: row;
     align-items:center;
+
+    ${(props) =>
+        `& :nth-child(${props.mark + 1}){
+            border: none;
+            background-color: #92E3A9;
+
+        }`
+    }
 `;
 
 export const StepIcon = styled.div`

@@ -52,7 +52,7 @@ function Screen(){
                     title={screenContent[page].title}
                     text={screenContent[page].text}
                 />
-                <Stepper />
+                <Stepper mark={page}/>
             </Box>
             
             <ButtonContainer>

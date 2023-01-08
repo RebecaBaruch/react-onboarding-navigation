@@ -2,7 +2,7 @@ import {Container, StepIcon} from './styled';
 
 function Stepper(props){
     return(
-        <Container>
+        <Container mark={props.mark}>
             {/* <StepIcon step-mark={props.step-mark}/> */}
             <StepIcon />
             <StepIcon />
