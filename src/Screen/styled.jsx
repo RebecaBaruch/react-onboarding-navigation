@@ -27,10 +27,9 @@ export const Box = styled.div`
 `;
 
 export const Figure = styled.div`
-    height: 65%;
+    height: 45%;
 
     & > :first-child{
         height: 100%;
-        margin-bottom: 20px;
     }
 `;
