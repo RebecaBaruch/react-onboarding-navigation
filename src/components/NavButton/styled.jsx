@@ -4,7 +4,8 @@ const Button = styled.button`
     width: 100%;
     padding: 1.2rem;
     border: none;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 
     ${(props) => 
             props.type == 'next' ?
