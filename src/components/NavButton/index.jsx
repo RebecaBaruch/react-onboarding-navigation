@@ -1,9 +1,9 @@
 import Button from './styled';
 
-function NavButton(props){
+function NavButton({type, onClick, children}){
     return(
-        <Button type={props.type} onClick={props.onClick}>
-            <h1>{ props.label }</h1>
+        <Button type={type} onClick={onClick}>
+            { children }
         </Button>
     );
 }

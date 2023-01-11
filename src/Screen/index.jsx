@@ -55,18 +55,14 @@ function Screen() {
       </Box>
 
       <ButtonContainer>
-        <NavButton
-          type={"next"}
-          label={page < 2 ? "Continue" : "Get Started!"}
-          onClick={pageChangeHandler}
-        />
+        <NavButton type={"next"} onClick={pageChangeHandler}> 
+          {page < 2 ? "Continue" : "Get Started!"} 
+        </NavButton>
 
         {page < 2 && (
-          <NavButton 
-            type={"skip"} 
-            label={"Skip"} 
-            onClick={skipChangeHandler} 
-          />
+          <NavButton type={"skip"} onClick={skipChangeHandler}>
+            Skip
+          </NavButton>
         )}
       </ButtonContainer>
     </Wrapper>
