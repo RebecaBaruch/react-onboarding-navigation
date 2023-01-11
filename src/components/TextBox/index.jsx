@@ -1,10 +1,10 @@
 import {TextWrapper, Title, Text} from './styled';
 
-function TextBox(props) {
+function TextBox({title, text}) {
     return(
         <TextWrapper>
-            <Title>{props.title}</Title>
-            <Text>{props.text}</Text>
+            <Title>{title}</Title>
+            <Text>{text}</Text>
         </TextWrapper>
     );
 }
